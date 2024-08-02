@@ -1838,7 +1838,15 @@ input, select, textarea {
 		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
 	}
 	
-		#header h1, .logo {
+	.logo{
+		position: absolute;
+		left: 1em;
+		top: 0;
+		bottom: 1em;
+		height: 3em;
+	}
+	
+		#header h1 {
 			position: absolute;
 			left: 1em;
 			top: 0;
@@ -1846,7 +1854,6 @@ input, select, textarea {
 			height: 3em;
 			line-height: 3em;
 			cursor: default;
-			/* max-width: 20%; */
 		}
 
 			#header h1 a {
