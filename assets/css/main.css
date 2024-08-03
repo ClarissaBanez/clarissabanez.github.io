@@ -2319,3 +2319,10 @@ input, select, textarea {
 			}
 
 		}
+
+		.socials{
+			display: flex;
+			justify-content: space-evenly;
+			font-size: 3em;
+		}
+		
