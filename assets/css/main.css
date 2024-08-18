@@ -588,7 +588,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
+		color: #9493c5;
 	}
 
 	sub {
@@ -662,7 +662,7 @@ input, select, textarea {
 		-webkit-transition: background-color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out;
-		background-color: #98c593;
+		background-color: #9493c5;
 		border: 0;
 		border-radius: 3.5em;
 		color: #ffffff;
@@ -719,7 +719,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		.button:hover,
 		button:hover {
-			background-color: #a8cea4;
+			background-color: #a4a7ce;
 		}
 
 		input[type="button"]:active,
@@ -727,7 +727,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		.button:active,
 		button:active {
-			background-color: #88bc82;
+			background-color: #9082bc;
 		}
 
 		input[type="button"].style2,
@@ -2322,7 +2322,7 @@ input, select, textarea {
 
 		.socials{
 			display: flex;
-			justify-content: space-evenly;
-			font-size: 3em;
+			justify-content:center;
+			font-size: 2em;
 		}
 		
