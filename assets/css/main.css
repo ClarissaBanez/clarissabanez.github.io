@@ -508,6 +508,10 @@ input, select, textarea {
 		letter-spacing: 0.025em;
 	}
 
+	p {
+		text-indent: 2em;
+	}
+
 		@media screen and (max-width: 1920px) {
 
 			body, input, textarea, select {
