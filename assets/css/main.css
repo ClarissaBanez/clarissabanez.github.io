@@ -508,8 +508,9 @@ input, select, textarea {
 		letter-spacing: 0.025em;
 	}
 
-	p {
+	.box p {
 		text-indent: 2em;
+		text-align: justify ;
 	}
 
 		@media screen and (max-width: 1920px) {
