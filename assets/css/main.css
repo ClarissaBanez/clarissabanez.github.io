@@ -1446,6 +1446,7 @@ max-width: 80vw;
 }
 .contact{
 	width: 80vw;
+	height: 90vh;
 	max-width: 1080px;
 }
 .contact .box{
