@@ -1347,8 +1347,9 @@ input, select, textarea {
 
 .home-page{
 	width: 95vw;
+	height:90vh;
 	/* background-color: pink; */
-	margin: 0 auto 2em auto;
+	margin: 0 auto 0 auto;
 	text-align: center;
 	/* top: 4em;
 	position: relative; */
