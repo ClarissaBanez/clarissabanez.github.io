@@ -86,8 +86,10 @@ input, select, textarea {
 
 	body {
 		background: #ffffff;
-		height: 100%;
+		min-height: 100vh;
 		min-width: 320px;
+		display: flex;
+		flex-direction: column;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -918,7 +920,7 @@ input, select, textarea {
 	  				float: right;
 					display: block;
 					 position: absolute;
-					right: 0.5em;
+					right: 1.5em;
 					top: 0;
 					 height: 2.5em;
 					 line-height: 2.5em;
@@ -1347,7 +1349,7 @@ input, select, textarea {
 
 .home-page{
 	width: 95vw;
-	height:90vh;
+	height:80vh;
 	/* background-color: pink; */
 	margin: 0 auto 0 auto;
 	text-align: center;
@@ -1379,7 +1381,7 @@ max-width: 80vw;
 	display: flex;
 	max-width: 1080px;
 	width: 80%;
-	height: 90vh;
+	height: 83vh;
 	justify-content: space-evenly;
 	/* overflow: scroll; */
 	gap: 3em;
@@ -1447,7 +1449,7 @@ max-width: 80vw;
 }
 .contact{
 	width: 80vw;
-	height: 90vh;
+	height: 83vh;
 	max-width: 1080px;
 }
 .contact .box{
