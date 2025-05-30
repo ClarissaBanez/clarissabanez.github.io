@@ -1379,7 +1379,7 @@ max-width: 80vw;
 
 .about  {
 	display: flex;
-	max-width: 1080px;
+	max-width: 2000px;
 	width: 80%;
 	height: 83vh;
 	justify-content: space-evenly;
@@ -1391,6 +1391,7 @@ max-width: 80vw;
 .profile-photo{
 	border-radius: 50%;
 	width: 30%;
+	max-width: 250px;
 	
 	object-fit: cover;
 	flex: 1 1 30%;
@@ -1481,7 +1482,7 @@ max-width: 80vw;
 	}
 	.work-description{
 		font-size: 0.6em;
-		line-height: 1.2em;
+		line-height: 1.5em;
 	}
 	.contact .box{
 		width: 80vw;
