@@ -1483,7 +1483,7 @@ max-width: 80vw;
 	}
 	.work-description{
 		font-size: 0.6em;
-		line-height: 1.5em;
+		line-height: 2em;
 	}
 	.contact .box{
 		width: 80vw;
@@ -1492,4 +1492,3 @@ max-width: 80vw;
 		font-size: 0.8em;
 	}
 }
-
