@@ -1349,18 +1349,21 @@ input, select, textarea {
 /* HOME PAGE		 */
 
 .home-page{
+	display: flex;
 	width: 95vw;
 	height:80vh;
-	margin: 0 auto 0 auto;
+	margin: auto;
+	justify-content: center;
 	text-align: center;
+	gap: 0.1em;
 	/* top: 4em;
 	position: relative; */
 	
 }
 .home-image{
-	width: auto;
-max-height: 70vh;
-max-width: 45vw;
+	/* width: auto; */
+/* height: auto; */
+/* width: 45vw; */
 }
 
 @media screen and (max-width: 736px){
