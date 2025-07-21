@@ -1351,17 +1351,16 @@ input, select, textarea {
 .home-page{
 	width: 95vw;
 	height:80vh;
-	/* background-color: pink; */
 	margin: 0 auto 0 auto;
 	text-align: center;
 	/* top: 4em;
 	position: relative; */
 	
 }
-#home-image{
+.home-image{
 	width: auto;
 max-height: 70vh;
-max-width: 80vw;
+max-width: 45vw;
 }
 
 @media screen and (max-width: 736px){
@@ -1425,6 +1424,16 @@ max-width: 80vw;
 	gap: 5em;
 	align-items: center;
 }
+
+.two-column-portfolio{
+	display:flex;
+	flex-direction:row;
+	gap: 1em;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: end;
+}
 .work .small-work{
     gap: 0em;
     display: flex;
@@ -1437,13 +1446,12 @@ max-width: 80vw;
 .small-work > img {
 	width: auto;
 max-height: 70vh;
-max-width: 50vw;
+max-width: 20vw;
 }
 .work > img {
 width: auto;
 max-height: 70vh;
 max-width: 80vw;
-/* max-width: 80vw; */
     
 }
 
@@ -1465,15 +1473,18 @@ max-width: 80vw;
 
 @media screen and (max-width: 736px) {
 	.portfolio{
-		gap: 0.5em;
+		gap: 4em;
+	}
+	.two-column-portfolio{
+		flex-direction: column;
+		align-items: start ;
 	}
 	.work .small-work{
 		flex-direction: column;
 		align-items: flex-start;
 		gap: 0;
 	}
-	.work > img{
-		width: 80vw;
+	.small-work{
 		height: auto;
 	}
 
