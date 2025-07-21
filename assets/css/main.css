@@ -1360,11 +1360,6 @@ input, select, textarea {
 	position: relative; */
 	
 }
-.home-image{
-	/* width: auto; */
-/* height: auto; */
-/* width: 45vw; */
-}
 
 @media screen and (max-width: 736px){
 
@@ -1487,12 +1482,9 @@ max-width: 80vw;
 		align-items: flex-start;
 		gap: 0;
 	}
-	.small-work{
-		height: auto;
-	}
 
 	.small-work > img{
-		width: 60vw;
+		max-width: 45vw;
 		height: auto;
 	}
 	.work-description{
