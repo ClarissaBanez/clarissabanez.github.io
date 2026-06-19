@@ -1434,6 +1434,7 @@ input, select, textarea {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
+	flex-wrap: wrap;
 }
 .commissions-photo{
 	border-radius: 5%;
@@ -1452,7 +1453,6 @@ input, select, textarea {
 		flex-direction: column;
 		align-items: center;
 		font-size: 0.9em;
-		overflow: scroll;
 	}
 	.commissions-photos{
 		flex-direction: row;
