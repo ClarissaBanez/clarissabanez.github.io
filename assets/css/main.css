@@ -1468,6 +1468,9 @@ td {
 	}
 }
 
+.title{
+	font-style: italic;
+}
 .portfolio{
 	position: relative;
 	/* top: 4em; */
