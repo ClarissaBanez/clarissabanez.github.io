@@ -1386,11 +1386,10 @@ input, select, textarea {
 
 .about  {
 	display: flex;
-	max-width: 2000px;
+
 	width: 80%;
 	height: 83vh;
 	justify-content: space-evenly;
-	/* overflow: scroll; */
 	gap: 3em;
 	align-items: flex-start;
 	padding: 1em;
@@ -1399,9 +1398,9 @@ td {
 	padding-right: 1em;
 }
 .profile-photo{
-	border-radius: 50%;
+	border-radius: 5%;
 	width: 30%;
-	max-width: 250px;
+	max-width: 400px;
 	
 	object-fit: cover;
 	flex: 1 1 30%;
@@ -1417,7 +1416,7 @@ td {
 		font-size: 0.9em;
 	}
 	.profile-photo{
-		max-height: 150px;
+		max-width: 50vw;
 		width: auto;
 	}
 }
