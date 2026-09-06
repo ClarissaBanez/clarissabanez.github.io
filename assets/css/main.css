@@ -1348,7 +1348,7 @@ input, select, textarea {
 	
 /* HOME PAGE		 */
 
-.home-page{
+.home-page {
 	display: flex;
 	width: 95vw;
 	height:90vh;
@@ -1361,7 +1361,8 @@ input, select, textarea {
 	
 }
 .home-image{
-	height: 80vh;
+	max-width: 95%;
+	max-height: 95%;
 }
 
 @media screen and (max-width: 736px){
@@ -1466,6 +1467,19 @@ td {
 		width: 150px;
 	}
 }
+
+.cv {
+	max-width: 90vw;
+}
+.cv-header {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-between;
+}
+.cv-table{
+	font-size: small;
+} 
+
 
 .title{
 	font-style: italic;
