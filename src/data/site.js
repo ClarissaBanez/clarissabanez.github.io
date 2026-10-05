@@ -3,9 +3,6 @@ export const site = {
   name: 'CLARISSA BAÑEZ',
   email: 'clarissa@clarissabanez.com',
   instagram: 'clarissa.banez',
-  // MailerLite newsletter forms. `account` is the number in your old HTML:
-  // look for  ml('account', '1234567')  in contact.html and paste it below.
-  mailerLite: { account: '1695099', contactForm: 'sqGBSD', collectForm: 'k8GbOu' },
   shopUrl: 'https://clarissabanez.bigcartel.com',
   cvPdf: '/documents/ClarissaBanez_CV_Sep2026.pdf',
   homeImage: '/images/ClarissaBanez_PaintersMarket_Installation View.jpg',
