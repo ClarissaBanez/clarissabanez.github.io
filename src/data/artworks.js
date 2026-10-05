@@ -128,8 +128,8 @@ export const artworks = [
     medium: 'Oil on Canvas', 
     dimensions: '15 x 15 cm',
     categories: ["Painter's Market"], 
-    fullFile: 'ClarissaBanez_Lemons_18x24cm_OilonCanvasBoard_2025.jpg', 
-    file: 'ClarissaBanez_Lemons_18x24cm_OilonCanvasBoard_2025.jpg', 
+    fullFile: 'ClarissaBanez_Cherries_15x15cm_OilonCanvasBoard_2025.jpg', 
+    file: 'ClarissaBanez_Cherries_15x15cm_OilonCanvasBoard_2025.jpg', 
     description: '', 
     available: false 
   },
