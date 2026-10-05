@@ -8,7 +8,7 @@ export const site = {
   mailerLite: { account: '1695099', contactForm: 'sqGBSD', collectForm: 'k8GbOu' },
   shopUrl: 'https://clarissabanez.bigcartel.com',
   cvPdf: '/documents/ClarissaBanez_CV_Sep2026.pdf',
-  homeImage: '/images/thumbs/ClarissaBanez_PaintersMarket_Installation View.png',
+  homeImage: '/images/ClarissaBanez_PaintersMarket_Installation View.jpg',
   homeAlt: "Painter's Market Exhibition",
   aboutImage: '/images/thumbs/ClarissaBanez_Artist Photo.jpg',
   about:

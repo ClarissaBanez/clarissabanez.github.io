@@ -19,7 +19,7 @@ export const categories = [
     name: "Painter's Market",
     description: 'Works shown at Painter\'s Market, Místečko, Prague.',
     installation: [
-      { file: 'ClarissaBanez_PaintersMarket_Installation View.png', caption: "Installation view, Painter's Market, 2025" },
+      { file: 'ClarissaBanez_PaintersMarket_Installation View.jpg', caption: "Installation view, Painter's Market, 2025" },
     ],
   },
     { name: '15 LET', description: 'Works shown at Málovani a Kresleni, Prague', installation: [] },

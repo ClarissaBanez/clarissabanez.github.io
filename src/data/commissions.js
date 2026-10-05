@@ -5,7 +5,7 @@ export const commissions = {
   images: [
     { file: 'ClarissaBanez_Basking in the Morning Sun_45x35cm_OilonCanvasBoard_2025.jpg', alt: 'Basking in the Morning Sun, oil on canvas' },
     { file: 'ClarissaBanez_Yesung_29.7x21cm_GraphiteonPaper_2025.jpg', alt: 'Yesung, graphite on paper' },
-    { file: 'ClarissaBanez_Ryeowook_30x24cm_GraphiteonPaper_2026.png', alt: 'Ryeowook, graphite on paper' },
+    { file: 'ClarissaBanez_Ryeowook_30x24cm_GraphiteonPaper_2026.jpg', alt: 'Ryeowook, graphite on paper' },
     { file: 'ClarissaBanez_Kyuhyun_30x24cm_GraphiteonPaper_2026.jpg', alt: 'Kyuhyun, graphite on paper' },
   ],
   // Each string is one paragraph.
