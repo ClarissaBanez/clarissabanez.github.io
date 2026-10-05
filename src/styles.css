@@ -21,8 +21,9 @@ h2 { font-size: 0.95rem; font-weight: 500; margin: 0 0 0.5rem; }
 /* Header + footer */
 .header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 12px 32px; padding: var(--pad); padding-bottom: 20px; }
 .logo { text-decoration: none; font-size: 1.3rem; letter-spacing: 0.18em; font-weight: 400; }
-.header nav { display: flex; flex-wrap: wrap; gap: 8px 28px; }
-.header nav a { text-decoration: none; font-size: 0.8rem; letter-spacing: 0.14em; color: var(--muted); padding-bottom: 2px; border-bottom: 1px solid transparent; }
+.header nav { display: flex; flex-wrap: nowrap; gap: 8px 28px; max-width: 100%; overflow-x: auto; scrollbar-width: none; }
+.header nav::-webkit-scrollbar { display: none; }
+.header nav a { white-space: nowrap; text-decoration: none; font-size: 0.85rem; letter-spacing: 0.14em; color: var(--muted); padding-bottom: 2px; border-bottom: 1px solid transparent; }
 .header nav a:hover, .header nav a.active { color: var(--text); border-color: var(--text); }
 .footer { padding: var(--pad); font-size: 0.75rem; letter-spacing: 0.12em; color: var(--muted); }
 
@@ -50,8 +51,9 @@ h2 { font-size: 0.95rem; font-weight: 500; margin: 0 0 0.5rem; }
 @media (max-width: 700px) { .comm-images { grid-template-columns: repeat(2, 1fr); } }
 
 /* Work: filters */
-.filters { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-bottom: 24px; }
-.filters button { background: none; border: 0; border-bottom: 1px solid transparent; padding: 8px 2px; font-size: 0.9rem; color: var(--muted); }
+.filters { display: flex; flex-wrap: nowrap; gap: 6px 22px; margin-bottom: 24px; overflow-x: auto; scrollbar-width: none; }
+.filters::-webkit-scrollbar { display: none; }
+.filters button { flex: 0 0 auto; white-space: nowrap; background: none; border: 0; border-bottom: 1px solid transparent; padding: 8px 2px; font-size: 0.9rem; color: var(--muted); }
 .filters button:hover, .filters button.on { color: var(--text); border-color: var(--text); }
 
 /* Work: optional category description + installation shots */
@@ -124,3 +126,14 @@ main:focus { outline: none; }
 .lightbox { touch-action: pan-y pinch-zoom; }
 .lb-hint { display: none; margin: 1rem 0 0; font-size: 0.8rem; color: var(--muted); }
 @media (hover: none) { .lb-hint { display: block; } }
+
+/* Phones: keep the menu and categories on one line each */
+@media (max-width: 600px) {
+  .header { gap: 4px; padding-bottom: 8px; }
+  .logo { font-size: 1.1rem; letter-spacing: 0.14em; }
+  .header nav { gap: 4px 18px; width: 100%; }
+  .header nav a { font-size: 0.75rem; letter-spacing: 0.08em; padding: 8px 0; }
+  .filters { gap: 6px 18px; margin: 0 calc(var(--pad) * -1) 20px; padding: 0 var(--pad); scroll-padding: 0 var(--pad);
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent); }
+}
