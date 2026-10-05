@@ -11,6 +11,8 @@
 //               ['Recent Work', "Painter's Market"]. A painting can be in
 //               several categories.
 //  description  shown beside the image. Leave '' to hide it.
+//  alt          (optional) describe what is IN the painting, for people using
+//               screen readers, e.g. 'Three lemons on a white cloth'
 //  available    true shows an "Available" link to the Collect page
 // =====================================================================
 
@@ -160,3 +162,7 @@ export const artworks = [
 // Builds safe URLs (handles spaces and commas in filenames).
 export const thumbSrc = (a) => encodeURI(`/images/thumbs/${a.file}`)
 export const fullSrc = (a) => (a.fullFile ? encodeURI(`/images/${a.fullFile}`) : thumbSrc(a))
+
+
+// Text read aloud by screen readers. Uses your `alt` description when you wrote one.
+export const altText = (a) => (a.alt ? `${a.title}. ${a.alt}` : `${a.title}, ${a.year}, ${a.medium}`)

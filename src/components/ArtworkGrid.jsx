@@ -1,4 +1,4 @@
-import { thumbSrc } from '../data/artworks.js'
+import { thumbSrc, altText } from '../data/artworks.js'
 
 // Every tile is the same height and paintings sit on a shared baseline, so
 // landscape and portrait works keep their true proportions and captions line up.
@@ -9,9 +9,9 @@ export default function ArtworkGrid({ works, onOpen }) {
       {works.map((w) => (
         <li key={w.slug} className="tile">
           <button type="button" onClick={() => onOpen(w.slug)} aria-label={`View ${w.title}`}>
-            <img src={thumbSrc(w)} alt={`${w.title}, ${w.year}`} loading="lazy" />
+            <img src={thumbSrc(w)} alt={altText(w)} loading="lazy" decoding="async" />
           </button>
-          <p className="caption"><span className="cap-title">{w.title}</span>,<span className="cap-year">{w.year}</span></p>
+          <p className="caption"><span className="cap-title">{w.title}</span> <span className="cap-year">{w.year}</span></p>
         </li>
       ))}
     </ul>

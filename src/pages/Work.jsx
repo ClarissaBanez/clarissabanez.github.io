@@ -1,7 +1,7 @@
 import usePageMeta from '../hooks/usePageMeta.js'
 import { useCallback, useMemo } from 'react'
 import { useSearchParams } from 'react-router-dom'
-import { artworks } from '../data/artworks.js'
+import { artworks, fullSrc } from '../data/artworks.js'
 import { categories, showAllButton } from '../data/categories.js'
 import CategoryFilter from '../components/CategoryFilter.jsx'
 import CategoryIntro from '../components/CategoryIntro.jsx'
@@ -25,6 +25,8 @@ export default function Work() {
 
   const index = visible.findIndex((a) => a.slug === openSlug)
   const current = index >= 0 ? visible[index] : null
+  const n = visible.length
+  const neighbours = current && n > 1 ? [visible[(index + 1) % n], visible[(index - 1 + n) % n]].map(fullSrc) : []
   const base = cat === defaultCat ? {} : { cat }
 
   const open = (slug) => setParams({ ...base, work: slug })
@@ -44,7 +46,7 @@ export default function Work() {
       <CategoryFilter names={names} active={cat} onChange={(n) => setParams(n === defaultCat ? {} : { cat: n })} />
       <CategoryIntro category={category} />
       <ArtworkGrid works={visible} onOpen={open} />
-      {current && <Lightbox work={current} index={index} total={visible.length} onClose={close} onPrev={onPrev} onNext={onNext} />}
+      {current && <Lightbox work={current} index={index} total={visible.length} onClose={close} onPrev={onPrev} onNext={onNext} preload={neighbours} />}
     </div>
   )
 }
