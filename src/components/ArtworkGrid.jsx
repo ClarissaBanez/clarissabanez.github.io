@@ -11,7 +11,7 @@ export default function ArtworkGrid({ works, onOpen }) {
           <button type="button" onClick={() => onOpen(w.slug)} aria-label={`View ${w.title}`}>
             <img src={thumbSrc(w)} alt={altText(w)} loading="lazy" decoding="async" />
           </button>
-          <p className="caption"><span className="cap-title">{w.title}</span> <span className="cap-year">{w.year}</span></p>
+          <p className="caption"><span className="cap-title">{w.title}</span>,<span className="cap-year">{w.year}</span></p>
         </li>
       ))}
     </ul>
