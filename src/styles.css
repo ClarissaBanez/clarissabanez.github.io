@@ -82,7 +82,14 @@ h2 { font-size: 0.95rem; font-weight: 500; margin: 0 0 0.5rem; }
   padding: clamp(56px, 6vw, 80px) var(--pad) var(--pad); overflow-y: auto; }
 .lb-close { width: 44px; height: 44px; position: absolute; top: 10px; right: var(--pad); background: none; border: 0; font-size: 2.2rem; line-height: 1; color: var(--muted); }
 .lb-close:hover { color: var(--text); }
-.lb-image { position: relative; height: calc(100vh - 150px); height: calc(100dvh - 150px); }
+.lb-media { display: flex; flex-direction: column; gap: 14px; height: calc(100vh - 150px); height: calc(100dvh - 150px); }
+.lb-image { position: relative; flex: 1 1 0; min-height: 0; }
+.lb-thumbs { display: flex; align-items: center; gap: 10px; flex: 0 0 auto; }
+.lb-thumbs button { padding: 0; border: 0; background: none; opacity: 0.55; }
+.lb-thumbs button:hover, .lb-thumbs button[aria-current='true'] { opacity: 1; }
+.lb-thumbs button[aria-current='true'] img { outline: 1px solid var(--text); outline-offset: 2px; }
+.lb-thumbs img { display: block; height: 52px; width: auto; max-width: 90px; object-fit: cover; }
+.lb-viewlabel { margin-left: 6px; font-size: 0.85rem; color: var(--muted); }
 .lb-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; animation: fade 0.25s ease; user-select: none; -webkit-user-drag: none; }
 @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
 .lb-info .meta { margin: 0; color: var(--muted); font-size: 0.95rem; }
@@ -93,7 +100,7 @@ h2 { font-size: 0.95rem; font-weight: 500; margin: 0 0 0.5rem; }
 
 @media (max-width: 800px) {
   .lightbox { grid-template-columns: 1fr; align-items: start; gap: 20px; }
-  .lb-image { height: 55vh; height: 55dvh; }
+   .lb-media { height: 62vh; height: 62dvh; }
   .about { grid-template-columns: 1fr; gap: 24px; }
   .cv-row { grid-template-columns: 1fr; gap: 0; }
 }

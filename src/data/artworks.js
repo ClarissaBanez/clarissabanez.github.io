@@ -13,52 +13,66 @@
 //  description  shown beside the image. Leave '' to hide it.
 //  alt          (optional) describe what is IN the painting, for people using
 //               screen readers, e.g. 'Three lemons on a white cloth'
+//  extras       (optional) more views of the same painting, shown as small
+//               thumbnails in the lightbox: details, installation views...
+//               extras: [
+//                 { file: 'Lemons_detail.jpg', label: 'Detail' },
+//                 { file: 'Lemons_installation.jpg', fullFile: 'Lemons_installation_large.jpg',
+//                   label: 'Installation view', alt: 'Lemons hanging beside two other works' },
+//               ],
+//               `file` lives in public/images/thumbs/. `fullFile` (optional) is a bigger
+//               version in public/images/. `alt` (optional) describes the photo.
 //  available    true shows an "Available" link to the Collect page
 // =====================================================================
 
 export const artworks = [
+  
   { 
     slug: 'i-hope-this-email-finds-you-well', 
     title: 'I hope this email finds you well.', 
     year: 2026, 
     medium: 'Oil on Wood', 
     dimensions: '24 x 18 cm',
-    categories: ['Recent Work'], 
+    categories: ['Recent Work', 'Portraiture'], 
     fullFile: 'ClarissaBanez_I hope this email finds you well_2026_Oil on Wood_24x18cm.jpg',
     file: 'ClarissaBanez_I hope this email finds you well_2026_Oil on Wood_24x18cm.jpg', 
     description: '', 
+    extras: [],
     available: false 
   },
-  { 
+  
+{ 
     slug: 'still-life-with-citrus', 
     title: 'Still Life with Citrus', 
     year: 2026, medium: 'Oil on Canvas', 
     dimensions: '40 x 50 cm',
-    categories: ['Recent Work'], 
+    categories: ['Recent Work', 'Still Life'], 
     fullFile: 'ClarissaBanez_Still Life with Citrus_2026_Oil on Canvas_40x50cm.JPG', 
     file: 'ClarissaBanez_Still Life with Citrus_2026_Oil on Canvas_40x50cm.JPG', 
     description: '', 
     available: false 
   },
-  { 
-    slug: 'bleak', 
-    title: 'Bleak', 
-    year: 2026, 
-    medium: 'Oil on Canvas', 
-    dimensions: '40 x 30 cm',
-    categories: ['Recent Work'], 
-    fullFile: 'ClarissaBanez_Bleak, 2026, Oil on Canvas, 40 x 30 cm.jpg', 
-    file: 'ClarissaBanez_Bleak, 2026, Oil on Canvas, 40 x 30 cm.jpg', 
+
+    { 
+    slug: 'basking-in-the-morning-sun', 
+    title: 'Basking in the Morning Sun', 
+    year: 2025, medium: 'Oil on Canvas', 
+    dimensions: '45 x 35 cm',
+    categories: ['Recent Work','Portraiture'], 
+    fullFile: 'ClarissaBanez_Basking in the Morning Sun_45x35cm_OilonCanvasBoard_2025.jpg', 
+    file: 'ClarissaBanez_Basking in the Morning Sun_45x35cm_OilonCanvasBoard_2025.jpg', 
     description: '', 
     available: false 
   },
+
+  
   { 
     slug: 'longing', 
     title: 'Longing', 
     year: 2025, 
     medium: 'Oil on Canvas', 
     dimensions: '80 x 60 cm',
-    categories: ['MÁSEN MÁNES'], 
+    categories: ['Landscape'], 
     fullFile: 'ClarissaBanez_Longing_80x60cm_OilonCanvasBoard_2025.jpg', 
     file: 'ClarissaBanez_Longing_80x60cm_OilonCanvasBoard_2025.jpg', 
     description: '', 
@@ -70,7 +84,7 @@ export const artworks = [
     year: 2025, 
     medium: 'Oil on Linen', 
     dimensions: '80 x 60 cm',
-    categories: ['MÁSEN MÁNES'], 
+    categories: ['Landscape'], 
     fullFile: 'ClarissaBanez_Rising_80x60cm_OilonLinen_2025.jpg', 
     file: 'ClarissaBanez_Rising_80x60cm_OilonLinen_2025.jpg', 
     description: '', 
@@ -81,20 +95,22 @@ export const artworks = [
     title: 'The Height of Doubt', year: 2025, 
     medium: 'Oil on Canvas', 
     dimensions: '30 x 40 cm',
-    categories: ['15 LET'], 
+    categories: ['Landscape'], 
     fullFile: 'ClarissaBanez_The Height of Doubt_30x40cm_OilonCanvas_2025.jpg', 
     file: 'ClarissaBanez_The Height of Doubt_30x40cm_OilonCanvas_2025.jpg', 
     description: '', 
     available: false 
   },
-  { 
-    slug: 'basking-in-the-morning-sun', 
-    title: 'Basking in the Morning Sun', 
-    year: 2025, medium: 'Oil on Canvas', 
-    dimensions: '45 x 35 cm',
-    categories: ['15 LET'], 
-    fullFile: 'ClarissaBanez_Basking in the Morning Sun_45x35cm_OilonCanvasBoard_2025.jpg', 
-    file: 'ClarissaBanez_Basking in the Morning Sun_45x35cm_OilonCanvasBoard_2025.jpg', 
+
+    { 
+    slug: 'bleak', 
+    title: 'Bleak', 
+    year: 2026, 
+    medium: 'Oil on Canvas', 
+    dimensions: '40 x 30 cm',
+    categories: ['Recent Work', 'Landscape'], 
+    fullFile: 'ClarissaBanez_Bleak, 2026, Oil on Canvas, 40 x 30 cm.jpg', 
+    file: 'ClarissaBanez_Bleak, 2026, Oil on Canvas, 40 x 30 cm.jpg', 
     description: '', 
     available: false 
   },
@@ -104,7 +120,7 @@ export const artworks = [
     year: 2025, 
     medium: 'Oil on Linen', 
     dimensions: '30 x 24 cm',
-    categories: ["Painter's Market"], 
+    categories: ['Still Life'], 
     fullFile: 'ClarissaBanez_A Pair_30x24cm_OilonLinen_2025.jpg', 
     file: 'ClarissaBanez_A Pair_30x24cm_OilonLinen_2025.jpg', 
     description: '', 
@@ -115,7 +131,7 @@ export const artworks = [
     year: 2025, 
     medium: 'Oil on Canvas', 
     dimensions: '18 x 24 cm',
-    categories: ["Painter's Market"], 
+    categories: ['Still Life'], 
     fullFile: 'ClarissaBanez_Lemons_18x24cm_OilonCanvasBoard_2025.jpg', 
     file: 'ClarissaBanez_Lemons_18x24cm_OilonCanvasBoard_2025.jpg', 
     description: '', 
@@ -127,7 +143,7 @@ export const artworks = [
     year: 2025, 
     medium: 'Oil on Canvas', 
     dimensions: '15 x 15 cm',
-    categories: ["Painter's Market"], 
+    categories: ['Still Life'], 
     fullFile: 'ClarissaBanez_Cherries_15x15cm_OilonCanvasBoard_2025.jpg', 
     file: 'ClarissaBanez_Cherries_15x15cm_OilonCanvasBoard_2025.jpg', 
     description: '', 
@@ -139,7 +155,7 @@ export const artworks = [
     year: 2025, 
     medium: 'Oil on Canvas', 
     dimensions: '15 x 15 cm',
-    categories: ["Painter's Market"], 
+    categories: ['Still Life'], 
     fullFile: 'ClarissaBanez_Sibuyas_15x15cm_OilonCanvas_2025.jpg', 
     file: 'ClarissaBanez_Sibuyas_15x15cm_OilonCanvas_2025.jpg', 
     description: '', 
@@ -151,7 +167,7 @@ export const artworks = [
     year: 2025, 
     medium: 'Oil on Canvas', 
     dimensions: '35 x 45 cm',
-    categories: ['15 LET',"Painter's Market"], 
+    categories: ['Still Life'], 
     fullFile: 'clarissabanez_Fragile.jpg', 
     file: 'clarissabanez_Fragile.jpg', 
     description: '', 

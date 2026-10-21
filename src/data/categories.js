@@ -14,15 +14,10 @@
 
 export const categories = [
   { name: 'Recent Work', description: '', installation: [] },
-  { name: 'MÁSEN MÁNES', description: 'Works shown at Galerie Mánes, Prague', installation: [] },
-  {
-    name: "Painter's Market",
-    description: 'Works shown at Painter\'s Market, Místečko, Prague.',
-    installation: [
-      { file: 'ClarissaBanez_PaintersMarket_Installation View.jpg', caption: "Installation view, Painter's Market, 2025" },
-    ],
+  { name: 'Portraiture', description: '', installation: [] },
+  { name: 'Landscape', description: 'Held in Sea, Sky and Stone is a series of inner landscapes', installation: [] },
+  { name: "Still Life", description: '', installation: [],
   },
-    { name: '15 LET', description: 'Works shown at Málovani a Kresleni, Prague', installation: [] },
 ]
 
 // Adds a button at the end that shows every painting at once.
