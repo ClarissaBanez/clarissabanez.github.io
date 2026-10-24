@@ -8,7 +8,7 @@ export const cv = [
     { year: '2024–2025', text: 'Drawing and Painting Studio with Adrian T. Bell, Malování Kreslení, Prague, Czech Republic' },
     { year: '2006–2013', text: 'Integrated Liberal Arts and Medicine Program (accelerated 7-year BS/MD), University of the Philippines, Manila, Philippines' },
     { text: 'Doctor of Medicine, 2013' },
-    { text: 'BS Basic Medical Science, 2011' } ]},
+    { text: 'BS Basic Medical Science, 2010' } ]},
   { title: 'Professional Development', rows: [
     { year: '2026', text: 'As We Grow V, with András Cséfalvay, SVĚTOVA 1, Prague, Czech Republic' },
     { text: 'Portraits and Landscapes in Oils, with Glenn Vilppu, Kunstfabrik Wien, Vienna, Austria' },

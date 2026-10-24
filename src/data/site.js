@@ -4,7 +4,7 @@ export const site = {
   email: 'clarissa@clarissabanez.com',
   instagram: 'clarissa.banez',
   shopUrl: 'https://clarissabanez.bigcartel.com',
-  cvPdf: '/documents/ClarissaBanez_CV_Sep2026.pdf',
+  cvPdf: '/documents/ClarissaBanez_CV.pdf',
   homeImage: '/images/ClarissaBanez_PaintersMarket_Installation View.jpg',
   homeAlt: "Painter's Market Exhibition",
   aboutImage: '/images/thumbs/ClarissaBanez_Artist Photo.jpg',
