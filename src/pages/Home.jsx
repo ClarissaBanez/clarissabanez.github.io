@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import usePageMeta from '../hooks/usePageMeta.js'
+import PhotoCredit from '../components/PhotoCredit.jsx'
 import { site } from '../data/site.js'
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
       <Link to="/work" className="home-hero">
         <img src={encodeURI(site.homeImage)} alt={site.homeAlt} />
       </Link>
+      <PhotoCredit credit={site.homeCredit} className="home-credit" />
     </>
   )
 }

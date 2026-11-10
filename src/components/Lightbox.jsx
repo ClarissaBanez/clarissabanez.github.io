@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { altText } from '../data/artworks.js'
+import PhotoCredit from './PhotoCredit.jsx'
 import { galleryImages } from '../lib/galleryImages.js'
 
 // Full-screen view: large image on the left, details on the right.
@@ -104,6 +105,7 @@ export default function Lightbox({ work, index, total, onClose, onPrev, onNext, 
         <div className="lb-image">
           <img ref={imgRef} key={current.src} src={current.src} alt={imgAlt} draggable="false" />
         </div>
+        <PhotoCredit credit={current.credit} className="lb-credit" />
         {images.length > 1 && (
           <div className="lb-thumbs" role="group" aria-label="Views of this work">
             {images.map((im, i) => (

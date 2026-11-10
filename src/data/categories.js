@@ -14,10 +14,10 @@
 
 export const categories = [
   { name: 'Recent Work', description: '', installation: [] },
-  { name: 'Portraiture', description: '', installation: [] },
-  { name: 'Landscape', description: 'Held in Sea, Sky and Stone is a series of inner landscapes', installation: [] },
-  { name: "Still Life", description: '', installation: [],
-  },
+  { name: "Artifacts", description: '"Artifacts" is a series of installation work that explores forces that shape memory, identity and home. The works were developed during As We Grow Program and shown at the Burden of Gravity, from Waking to Space Exhibition at SVĚTOVA1, Prague.', installation: []},
+  { name: 'Portraits', description: '', installation: [] },
+  { name: 'Held in Sea, Sky and Stone', description: 'Held in Sea, Sky and Stone is a series of inner landscapes.', installation: [] },
+  { name: "Still Life", description: '', installation: [],},
 ]
 
 // Adds a button at the end that shows every painting at once.

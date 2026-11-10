@@ -11,6 +11,7 @@
 //               ['Recent Work', "Painter's Market"]. A painting can be in
 //               several categories.
 //  description  shown beside the image. Leave '' to hide it.
+//photoCredit    'Photographer Name',  for the painting's main image
 //  alt          (optional) describe what is IN the painting, for people using
 //               screen readers, e.g. 'Three lemons on a white cloth'
 //  extras       (optional) more views of the same painting, shown as small
@@ -18,14 +19,49 @@
 //               extras: [
 //                 { file: 'Lemons_detail.jpg', label: 'Detail' },
 //                 { file: 'Lemons_installation.jpg', fullFile: 'Lemons_installation_large.jpg',
-//                   label: 'Installation view', alt: 'Lemons hanging beside two other works' },
+//                   label: 'Installation view', credit: 'Photographer Name' alt: 'Lemons hanging beside two other works' },
 //               ],
 //               `file` lives in public/images/thumbs/. `fullFile` (optional) is a bigger
 //               version in public/images/. `alt` (optional) describes the photo.
 //  available    true shows an "Available" link to the Collect page
+//  
 // =====================================================================
 
 export const artworks = [
+
+   { 
+    slug: '09-51-an-artifact-of-space', 
+    title: 'No. 09-51: An Artifact of Space ', 
+    year: 2026, 
+    medium: 'Oil on copper, mounted on acrylic, spring and wires', 
+    dimensions: '24 x 18 cm',
+    categories: ['Recent Work', 'Artifacts'], 
+    fullFile: 'ClarissaBanez_No. 09-51 An Artifact of Space_Oil on Copper, Acrylic sheet, Springs, Wire.jpg',
+    file: 'ClarissaBanez_No. 09-51 An Artifact of Space_Oil on Copper, Acrylic sheet, Springs, Wire.jpg', 
+    label: 'Installation',
+    description: '', 
+    extras: [
+        {fullFile: 'ClarissaBanez_No. 09-51 An Artifact of Space_Oil on Copper, Acrylic sheet, Springs, Wire_Detail.jpg', file: 'ClarissaBanez_No. 09-51 An Artifact of Space_Oil on Copper, Acrylic sheet, Springs, Wire_Detail.jpg', label: 'Details'}],
+    available: false, 
+    credit: '',
+  },
+     { 
+    slug: '208-an-artifact-of-time', 
+    title: 'No. 208: An Artifact of Time ', 
+    year: 2026, 
+    medium: 'Free-motion Embroidery on Linen', 
+    dimensions: '36 x 208 cm',
+    categories: ['Recent Work', 'Artifacts'], 
+    fullFile: 'ClarissaBanez_No. 208_An Artifact of Time_svetova_BURDEN OF GRAVITY –-FROM WAKING TO SPACE-1_Marian Hromek.jpg',
+    file: 'ClarissaBanez_No. 208_An Artifact of Time_svetova_BURDEN OF GRAVITY –-FROM WAKING TO SPACE-1_Marian Hromek.jpg',
+    photoCredit: 'Maria Hromek',
+    description: '', 
+    extras: [
+      {file: 'ClarissaBanez_No. 208_An Artifact of Time_Detail.jpg', label:'Details', credit: 'Maria Hromek'},
+      {file: 'ClarissaBanez_No. 208_An Artifact of Time_Detail 2.jpg', label:'Details',  credit: 'Maria Hromek'}
+    ],
+    available: false, 
+  },
   
   { 
     slug: 'i-hope-this-email-finds-you-well', 
@@ -33,12 +69,13 @@ export const artworks = [
     year: 2026, 
     medium: 'Oil on Wood', 
     dimensions: '24 x 18 cm',
-    categories: ['Recent Work', 'Portraiture'], 
+    categories: ['Recent Work', 'Portraits'], 
     fullFile: 'ClarissaBanez_I hope this email finds you well_2026_Oil on Wood_24x18cm.jpg',
     file: 'ClarissaBanez_I hope this email finds you well_2026_Oil on Wood_24x18cm.jpg', 
     description: '', 
     extras: [],
-    available: false 
+    available: false, 
+    credit: '',
   },
   
 { 
@@ -58,7 +95,7 @@ export const artworks = [
     title: 'Basking in the Morning Sun', 
     year: 2025, medium: 'Oil on Canvas', 
     dimensions: '45 x 35 cm',
-    categories: ['Recent Work','Portraiture'], 
+    categories: ['Recent Work','Portraits'], 
     fullFile: 'ClarissaBanez_Basking in the Morning Sun_45x35cm_OilonCanvasBoard_2025.jpg', 
     file: 'ClarissaBanez_Basking in the Morning Sun_45x35cm_OilonCanvasBoard_2025.jpg', 
     description: '', 
@@ -72,7 +109,7 @@ export const artworks = [
     year: 2025, 
     medium: 'Oil on Canvas', 
     dimensions: '80 x 60 cm',
-    categories: ['Landscape'], 
+    categories: ['Held in Sea, Sky and Stone'], 
     fullFile: 'ClarissaBanez_Longing_80x60cm_OilonCanvasBoard_2025.jpg', 
     file: 'ClarissaBanez_Longing_80x60cm_OilonCanvasBoard_2025.jpg', 
     description: '', 
@@ -84,7 +121,7 @@ export const artworks = [
     year: 2025, 
     medium: 'Oil on Linen', 
     dimensions: '80 x 60 cm',
-    categories: ['Landscape'], 
+    categories: ['Held in Sea, Sky and Stone'], 
     fullFile: 'ClarissaBanez_Rising_80x60cm_OilonLinen_2025.jpg', 
     file: 'ClarissaBanez_Rising_80x60cm_OilonLinen_2025.jpg', 
     description: '', 
@@ -95,7 +132,7 @@ export const artworks = [
     title: 'The Height of Doubt', year: 2025, 
     medium: 'Oil on Canvas', 
     dimensions: '30 x 40 cm',
-    categories: ['Landscape'], 
+    categories: ['Held in Sea, Sky and Stone'], 
     fullFile: 'ClarissaBanez_The Height of Doubt_30x40cm_OilonCanvas_2025.jpg', 
     file: 'ClarissaBanez_The Height of Doubt_30x40cm_OilonCanvas_2025.jpg', 
     description: '', 
@@ -108,7 +145,7 @@ export const artworks = [
     year: 2026, 
     medium: 'Oil on Canvas', 
     dimensions: '40 x 30 cm',
-    categories: ['Recent Work', 'Landscape'], 
+    categories: ['Recent Work', 'Held in Sea, Sky and Stone'], 
     fullFile: 'ClarissaBanez_Bleak, 2026, Oil on Canvas, 40 x 30 cm.jpg', 
     file: 'ClarissaBanez_Bleak, 2026, Oil on Canvas, 40 x 30 cm.jpg', 
     description: '', 

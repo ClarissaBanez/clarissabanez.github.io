@@ -168,3 +168,7 @@ main:focus { outline: none; }
   .filter-list button { display: block; width: 100%; min-height: 44px; padding: 8px 16px; text-align: left; background: none; border: 0; font-size: 0.95rem; color: var(--muted); }
   .filter-list button.on { color: var(--text); font-weight: 500; }
 }
+/* Photo credits: small and quiet (still readable: #767676 on white is about 4.5:1) */
+.credit { margin: 6px 0 0; font-size: 0.72rem; letter-spacing: 0.04em; color: #767676; }
+.home-credit { margin: calc(8px - var(--pad)) 0 var(--pad); padding: 0 var(--pad); }
+.lb-credit { flex: 0 0 auto; margin-top: -6px; }

@@ -1,3 +1,5 @@
+import PhotoCredit from './PhotoCredit.jsx'
+
 // Optional description and installation shots shown above the grid.
 export default function CategoryIntro({ category }) {
   const { description, installation = [] } = category || {}
@@ -11,6 +13,7 @@ export default function CategoryIntro({ category }) {
             <li key={s.file}>
               <img src={encodeURI(`/images/thumbs/${s.file}`)} alt={s.caption || `Installation view, ${category.name}`} />
               {s.caption && <p className="caption">{s.caption}</p>}
+              <PhotoCredit credit={s.credit} />
             </li>
           ))}
         </ul>
